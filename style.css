@@ -1,0 +1,19 @@
+h1{
+    color: rebeccapurple !important;
+
+}
+
+a:link{
+
+}
+a:active{
+    
+}
+a:hover{
+    background-color: rgb(105, 95, 160);
+
+}
+a:visited{
+    color: bisque
+    
+}
