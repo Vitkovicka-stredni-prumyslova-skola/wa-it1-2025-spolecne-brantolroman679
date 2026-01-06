@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Novák – IT specialista</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background-color: #fafafa;
+      color: #111;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Levý panel */
+    aside {
+      width: 240px;
+      background-color: #fff;
+      border-right: 1px solid #e5e5e5;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .profile {
+      text-align: left;
+    }
+
+    .avatar {
+      background-color: #111;
+      color: #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .title {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      display: block;
+      color: #111;
+      text-decoration: none;
+      margin: 1rem 0;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0070f3;
+    }
+
+    .footer {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* Hlavní obsah */
+    main {
+      flex: 1;
+      padding: 3rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .section {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <div>
+      <div class="profile">
+        <div class="avatar">AJ</div>
+        <div class="name">Jan Novák</div>
+        <div class="title">IT specialista</div>
+      </div>
+
+      <nav>
+        <a href="#omne">O mně</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+
+    <div class="footer">Minimalistická prezentace • © 2025</div>
+  </aside>
+
+  <main>
+    <h1>Pomáhám firmám bezpečně růst</h1>
+    <p><strong>Síťová bezpečnost, penetrační testy, správa serverů a poradenství</strong></p>
+
+    <div id="omne" class="section">
+      <h2>O mně</h2>
+      <p>Jsem IT specialista se zkušenostmi v oblasti informační bezpečnosti, správy sítí a serverů. Pomáhám navrhovat bezpečné řešení, provádět audit a zavádět bezpečnostní postupy, které jsou praktické a srozumitelné pro tým.</p>
+    </div>
+
+    <div id="sluzby" class="section">
+      <h2>Služby</h2>
+      <ul>
+        <li>Penzrační testy aplikací a sítí</li>
+        <li>Bezpečnostní audity a doporučení</li>
+        <li>Nastavení firewallů, VPN a monitoringu</li>
+        <li>Školení zaměstnanců v oblasti bezpečnosti</li>
+      </ul>
+    </div>
+
+    <div id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <p>Ukázky projektů a referencí rád sdílím na vyžádání. Preferuji jasnou komunikaci a dokumentaci k provedeným zásahům.</p>
+    </div>
+
+    <div id="kontakt" class="section">
+      <h2>Kontakt</h2>
+      <p>Kontaktujte mě e-mailem na <a href="mailto:jan.novak@example.com">jan.novak@example.com</a>.</p>
+    </div>
+  </main>
+</body>
+</html>
