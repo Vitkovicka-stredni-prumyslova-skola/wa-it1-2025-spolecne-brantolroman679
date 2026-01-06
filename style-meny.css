@@ -1,0 +1,23 @@
+nav#menu {
+    background-color: coral;
+    width: 250px;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+nav#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav#menu ul li {
+    padding: 8px 0;
+    margin-bottom: 10px;
+    background-color: lightblue;
+}
+nav#menu ul li a:hover{
+    display: block;
+    color: aliceblue;
+}
