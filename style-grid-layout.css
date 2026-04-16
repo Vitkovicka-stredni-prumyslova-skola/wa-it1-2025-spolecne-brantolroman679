@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Desktopové menu*/
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    a:hover {
+        background-color: red;
+    }
+    
+}
+.menu li {
+    flex:1;
+    max-width: 100px;
+}
+
+
+.container{
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    gap: 10px;
+
+    grid-template-areas: 
+      "header header header header header"
+        ". nav nav nav ."
+        ". main main main box1"
+        ". main main main box2"
+        ". main main main box3"
+        ". box4 box5 box6 ."
+        "footer footer footer footer footer"
+    ;
+}
+
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+main{
+    background-color: blanchedalmond;
+    grid-area: main;
+}
+
+nav{
+    background-color: blueviolet;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: burlywood;
+    grid-area: footer;
+}
+.box1{
+    background-color: aqua;
+    grid-area: box1;
+}
+.box2{
+    background-color: aqua;
+    grid-area: box2;
+}
+.box3{
+    background-color: aqua;
+    grid-area: box3;
+}
+.box4{
+    background-color: aqua;
+    grid-area: box4;
+}
+.box5{
+    background-color: aqua;
+    grid-area: box5;
+}
+.box6{
+    background-color: aqua;
+    grid-area: box6;
+}
+
+@media (max-width: 768px){
+     .container{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 100px);
+    gap: 0px;
+
+    grid-template-areas: 
+      "header"
+        "nav"
+        "main"
+        "main"
+        "main"
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "footer"
+    ;
+}
+}
